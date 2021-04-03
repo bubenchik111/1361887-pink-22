@@ -40,7 +40,9 @@
         <p class="feed__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="feed__post post">
-          <img class="post__image post__img--special" src="img/panorama-tablet.jpg" width="320" height="137" alt="">
+          <a class="post__link" href="#">
+            <img class="post__image post__img--special" src="img/panorama-tablet.jpg" width="320" height="137" alt="">
+          </a>
           <div class="post__container">
             <div class="post__meta">
               <span class="post__author">Анна</span>
@@ -56,90 +58,122 @@
             </div>
           </div>
         </div>
-        <div class="feed__post post">
-          <img class="post__image post__img--special" src="img/photo-1-mobile.jpg" width="280" height="180" alt="">
-          <div class="post__container">
-            <div class="post__meta">
-              <span class="post__author">Левон</span>
-              <time class="post__date" datetime="2021-04-01T22:44">(5 часов назад)</time>
+        <ul class="feed__list">
+          <li class="feed__item">
+            <div class="post">
+              <a class="post__link" href="#">
+                <img class="post__image post__img--special" src="img/photo-1-mobile.jpg" width="280" height="180"
+                  alt="">
+              </a>
+              <div class="post__container">
+                <div class="post__meta">
+                  <span class="post__author">Левон</span>
+                  <time class="post__date" datetime="2021-04-01T22:44">(5 часов назад)</time>
+                </div>
+                <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="post__likes likes">
+                  <button class="likes__like-button likes__like-button--active" type="button"></button>
+                  <span class="likes__count">Нравится: <span class="likes__value">356</span></span>
+                </div>
+              </div>
             </div>
-            <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="post__likes likes">
-              <button class="likes__like-button likes__like-button--active" type="button"></button>
-              <span class="likes__count">Нравится: <span class="likes__value">356</span></span>
+          </li>
+          <li class="feed__item">
+            <div class="post">
+              <a class="post__link" href="#">
+                <img class="post__image post__img--special" src="img/photo-2-mobile.jpg" width="280" height="180"
+                  alt="">
+              </a>
+              <div class="post__container">
+                <div class="post__meta">
+                  <span class="post__author">Антон</span>
+                  <time class="post__date" datetime="2021-04-01T22:44">(12 часов назад)</time>
+                </div>
+                <p class="post__text">Соседи будут рады!</p>
+                <div class="post__likes likes">
+                  <button class="likes__like-button likes__like-button--active" type="button"></button>
+                  <span class="likes__count">Нравится: <span class="likes__value">666</span></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="feed__post post">
-          <img class="post__image post__img--special" src="img/photo-2-mobile.jpg" width="280" height="180" alt="">
-          <div class="post__container">
-            <div class="post__meta">
-              <span class="post__author">Антон</span>
-              <time class="post__date" datetime="2021-04-01T22:44">(12 часов назад)</time>
+          </li>
+          <li class="feed__item">
+            <div class="post">
+              <a class="post__link" href="#">
+                <img class="post__image post__img--special" src="img/photo-3-tablet.jpg" width="280" height="180"
+                  alt="">
+              </a>
+              <div class="post__container">
+                <div class="post__meta">
+                  <span class="post__author">Борис</span>
+                  <time class="post__date" datetime="2021-04-01T22:44">(20 часов назад)</time>
+                </div>
+                <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="post__likes likes">
+                  <button class="likes__like-button likes__like-button--active" type="button"></button>
+                  <span class="likes__count">Нравится: <span class="likes__value">215</span></span>
+                </div>
+              </div>
             </div>
-            <p class="post__text">Соседи будут рады!</p>
-            <div class="post__likes likes">
-              <button class="likes__like-button likes__like-button--active" type="button"></button>
-              <span class="likes__count">Нравится: <span class="likes__value">666</span></span>
+          </li>
+          <li class="feed__item">
+            <div class="post">
+              <a class="post__link" href="#">
+                <img class="post__image post__img--special" src="img/photo-4-tablet.jpg" width="280" height="180"
+                  alt="">
+              </a>
+              <div class="post__container">
+                <div class="post__meta">
+                  <span class="post__author">Сергей</span>
+                  <time class="post__date" datetime="2021-04-01T22:44">(25 часов назад)</time>
+                </div>
+                <p class="post__text">Самая кубанская в мире!</p>
+                <div class="post__likes likes">
+                  <button class="likes__like-button likes__like-button--active" type="button"></button>
+                  <span class="likes__count">Нравится: <span class="likes__value">4</span></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="feed__post post">
-          <img class="post__image post__img--special" src="img/photo-3-tablet.jpg" width="280" height="180" alt="">
-          <div class="post__container">
-            <div class="post__meta">
-              <span class="post__author">Борис</span>
-              <time class="post__date" datetime="2021-04-01T22:44">(20 часов назад)</time>
+          </li>
+          <li class="feed__item">
+            <div class="post">
+              <a class="post__link" href="#">
+                <img class="post__image post__img--special" src="img/photo-5-tablet.jpg" width="280" height="180"
+                  alt="">
+              </a>
+              <div class="post__container">
+                <div class="post__meta">
+                  <span class="post__author">Максим</span>
+                  <time class="post__date" datetime="2021-04-01T22:44">(40 часов назад)</time>
+                </div>
+                <p class="post__text">Где снег-то?</p>
+                <div class="post__likes likes">
+                  <button class="likes__like-button likes__like-button--active" type="button"></button>
+                  <span class="likes__count">Нравится: <span class="likes__value">150</span></span>
+                </div>
+              </div>
             </div>
-            <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="post__likes likes">
-              <button class="likes__like-button likes__like-button--active" type="button"></button>
-              <span class="likes__count">Нравится: <span class="likes__value">215</span></span>
+          </li>
+          <li class="feed__item">
+            <div class="post">
+              <a class="post__link" href="#">
+                <img class="post__image post__img--special" src="img/photo-6-tablet.jpg" width="280" height="180"
+                  alt="">
+              </a>
+              <div class="post__container">
+                <div class="post__meta">
+                  <span class="post__author">Надежда</span>
+                  <time class="post__date" datetime="2021-04-01T22:44">(45 часов назад)</time>
+                </div>
+                <p class="post__text">Всем GM и взаимные лайки!</p>
+                <div class="post__likes likes">
+                  <button class="likes__like-button likes__like-button--active" type="button"></button>
+                  <span class="likes__count">Нравится: <span class="likes__value">2560</span></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="feed__post post">
-          <img class="post__image post__img--special" src="img/photo-4-tablet.jpg" width="280" height="180" alt="">
-          <div class="post__container">
-            <div class="post__meta">
-              <span class="post__author">Сергей</span>
-              <time class="post__date" datetime="2021-04-01T22:44">(25 часов назад)</time>
-            </div>
-            <p class="post__text">Самая кубанская в мире!</p>
-            <div class="post__likes likes">
-              <button class="likes__like-button likes__like-button--active" type="button"></button>
-              <span class="likes__count">Нравится: <span class="likes__value">4</span></span>
-            </div>
-          </div>
-        </div>
-        <div class="feed__post post">
-          <img class="post__image post__img--special" src="img/photo-5-tablet.jpg" width="280" height="180" alt="">
-          <div class="post__container">
-            <div class="post__meta">
-              <span class="post__author">Максим</span>
-              <time class="post__date" datetime="2021-04-01T22:44">(40 часов назад)</time>
-            </div>
-            <p class="post__text">Где снег-то?</p>
-            <div class="post__likes likes">
-              <button class="likes__like-button likes__like-button--active" type="button"></button>
-              <span class="likes__count">Нравится: <span class="likes__value">150</span></span>
-            </div>
-          </div>
-        </div>
-        <div class="feed__post post">
-          <img class="post__image post__img--special" src="img/photo-6-tablet.jpg" width="280" height="180" alt="">
-          <div class="post__container">
-            <div class="post__meta">
-              <span class="post__author">Надежда</span>
-              <time class="post__date" datetime="2021-04-01T22:44">(45 часов назад)</time>
-            </div>
-            <p class="post__text">Всем GM и взаимные лайки!</p>
-            <div class="post__likes likes">
-              <button class="likes__like-button likes__like-button--active" type="button"></button>
-              <span class="likes__count">Нравится: <span class="likes__value">2560</span></span>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="upload">
@@ -147,28 +181,45 @@
       <div class="upload__wrapper">
         <p class="upload__header">Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload__editor editor">
+        <form class="upload__editor editor">
           <div class="editor__photo">
             <img class="editor__photo-preview" src="img/photo-7-tablet.jpg" width="280" height="374" alt="">
           </div>
           <div class="editor__controls controls">
-            <div class="controls__buttons">
-              <button class="controls__button controls__button--crop" type="button"></button>
-              <button class="controls__button controls__button--fill" type="button"></button>
-              <button class="controls__button controls__button--contrast" type="button"></button>
-            </div>
-            <div class="controls__slider">
-              <div class="controls__scale">
-                <div class="controls__toggle controls__toggle--active"></div>
+            <div class="controls__container">
+              <div class="controls__tab">
+                <button class="controls__button controls__button--active controls__button--crop" type="button"></button>
+                <div class="controls__slider">
+                  <div class="controls__scale">
+                    <div class="controls__toggle controls__toggle--active"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="controls__tab">
+                <button class="controls__button controls__button--active controls__button--fill" type="button"></button>
+                <div class="controls__slider">
+                  <div class="controls__scale">
+                    <div class="controls__toggle controls__toggle--active"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="controls__tab">
+                <button class="controls__button controls__button--active controls__button--contrast" type="button"></button>
+                <div class="controls__slider">
+                  <div class="controls__scale">
+                    <div class="controls__toggle controls__toggle--active"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="editor__post post">
-            <button class="post__upload-button post__upload-button--hover post__upload-button--active"
-              type="button">Запостить</button>
-            <button class="post__cancel-button post__cancel-button--hover post__cancel-button--active">Отмена</button>
+          <div class="editor__upload upload">
+            <button class="upload__post-button upload__post-button--hover upload__post-button--active"
+              type="submit">Запостить</button>
+            <button class="upload__cancel-button upload__cancel-button--hover upload__cancel-button--active"
+              type="reset">Отмена</button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   </main>
