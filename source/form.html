@@ -13,13 +13,14 @@
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle--hover main-nav__toggle--active" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--desktop" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--desktop" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--desktop"
+                href="catalog.html">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--desktop">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--desktop" href="#">HTML Academy</a></li>
           </ul>
@@ -34,21 +35,23 @@
       </div>
     </section>
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту!</p>
       <fieldset class="name">
         <div class="name__wrapper">
-          <p class="name__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-            бонусную карту!</p>
           <p class="name__item">
             <label class="name__label" for="last-name">Фамилия:</label>
-            <input class="name__input" id="last-name" type="text" placeholder="Укажите фамилию *" required>
+            <input class="name__input" id="last-name" name="last-name" type="text" placeholder="Укажите фамилию *"
+              required>
           </p>
           <p class="name__item">
             <label class="name__label" for="first-name">Имя:</label>
-            <input class="name__input" id="first-name" type="text" placeholder="Укажите ваше имя *" required>
+            <input class="name__input" id="first-name" name="first-name" type="text" placeholder="Укажите ваше имя *"
+              required>
           </p>
           <p class="name__item">
             <label class="name__label" for="middle-name">Фамилия:</label>
-            <input class="name__input" id="middle-name" type="text" placeholder="Ну и отчество тоже">
+            <input class="name__input" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
           </p>
         </div>
       </fieldset>
@@ -56,27 +59,32 @@
         <div class="achievements__wrapper">
           <h2 class="achievements__heading">Ваши безбашенные достижения в путешествии</h2>
           <p class="achievements__item">
-            <input class="achievements__input" id="achievement-1" type="checkbox" checked>
+            <input class="achievements__input" id="achievement-1" name="achievement" value="achievement-1"
+              type="checkbox" checked>
             <label class="achievements__input" for="achievement-1">Сделал селфи с акулой</label>
           </p>
           <p class="achievements__item">
-            <input class="achievements__input" id="achievement-2" type="checkbox" checked>
+            <input class="achievements__input" id="achievement-2" name="achievement" value="achievement-2"
+              type="checkbox" checked>
             <label class="achievements__input" for="achievement-2">Обгорел на пляже</label>
           </p>
           <p class="achievements__item">
-            <input class="achievements__input" id="achievement-3" type="checkbox">
+            <input class="achievements__input" id="achievement-3" name="achievement" value="achievement-3"
+              type="checkbox">
             <label class="achievements__input" for="achievement-3">Видел Чака Норриса</label>
           </p>
           <p class="achievements__item">
-            <input class="achievements__input" id="achievement-4" type="checkbox">
+            <input class="achievements__input" id="achievement-4" name="achievement" value="achievement-4"
+              type="checkbox">
             <label class="achievements__input" for="achievement-4">Накупил сувениров</label>
           </p>
           <p class="achievements__item">
-            <input class="achievements__input" id="achievement-5" type="checkbox" checked>
+            <input class="achievements__input" id="achievement-5" name="achievement" value="achievement-5"
+              type="checkbox" checked>
             <label class="achievements__input" for="achievement-5">Удержал башню</label>
           </p>
           <p class="achievements__item">
-            <input class="achievements__input" id="achievement-6" type="checkbox">
+            <input class="achievements__input" id="achievement-6" name="achievement" type="checkbox">
             <label class="achievements__input" for="achievement-6">Разгромил отель</label>
           </p>
         </div>
@@ -86,11 +94,12 @@
         <div class="user-contacts__wrapper">
           <p class="user-contacts__item">
             <label class="user-contacts__label" for="phone">Номер телефона</label>
-            <input class="user-contacts__input" id="phone" type="tel" placeholder="Номер, пожалуйста">
+            <input class="user-contacts__input" id="phone" name="phone" type="tel" placeholder="Номер, пожалуйста">
           </p>
           <p class="user-contacts__item">
             <label class="user-contacts__label" for="mail">Адрес почты</label>
-            <input class="user-contacts__input" id="mail" type="email" placeholder="Введите почту *" required>
+            <input class="user-contacts__input" id="mail" name="mail" type="email" placeholder="Введите почту *"
+              required>
           </p>
         </div>
       </fieldset>
@@ -98,15 +107,15 @@
         <div class="app__wrapper">
           <h2 class="app__heading">С каким приложением путешествовали?</h2>
           <p class="app__item">
-            <input class="app__input" id="ios" type="radio" checked>
+            <input class="app__input" id="ios" name="device" type="radio" value="ios" checked>
             <label class="app__label" for="ios">Pink для iOS</label>
           </p>
           <p class="app__item">
-            <input class="app__input" id="android" type="radio">
+            <input class="app__input" id="android" name="device" value="android" type="radio">
             <label class="app__label" for="android">Pink на Android</label>
           </p>
           <p class="app__item">
-            <input class="app__input" id="windows-phone" type="radio">
+            <input class="app__input" id="windows-phone" name="device" value="windows-phone" type="radio">
             <label class="app__label" for="windows-phone">Windows Phone</label>
           </p>
         </div>
@@ -114,7 +123,7 @@
       <section class="review">
         <div class="review__wrapper">
           <h2 class="review__heading">Опишите свои эмоции</h2>
-          <textarea name="review-text" id="review-text" cols="30" rows="10"
+          <textarea class="review__text" id="review-text" name="review-text" cols="30" rows="10"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
       </section>
@@ -137,7 +146,7 @@
           уже поступила к нам. В ближайшее
           время мы рассмотрим ее и
           оповестим вас.</p>
-        <button class="success__button button">Ок</button>
+        <button class="success__button success__button--hover success__button--active button">Ок</button>
       </section>
     </form>
   </main>
