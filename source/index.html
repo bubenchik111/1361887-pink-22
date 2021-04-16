@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -33,12 +34,12 @@
       <div class="download__wrapper">
         <h1 class="download__heading">Взгляните на жизнь иначе!</h1>
         <footer class="download__footer">
-          <a class="download__button" href="#">Скачать приложение</a>
           <div class="download__container">
+          <a class="download__button" href="#">Скачать приложение</a>
             <ul class="download__list">
-              <li class="download__item"><a class="download__link download__link--ios" href="#"></a></li>
-              <li class="download__item"><a class="download__link download__link--android" href="#"></a></li>
-              <li class="download__item"><a class="download__link download__link--windows" href="#"></a></li>
+              <li class="download__item"><a class="download__link download__link--ios" href="https://www.apple.com/ru/app-store/"></a></li>
+              <li class="download__item"><a class="download__link download__link--android" href="https://play.google.com/store?hl=ru&gl=US"></a></li>
+              <li class="download__item"><a class="download__link download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps"></a></li>
             </ul>
             <p class="download__available-platforms">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X,
               Windows 8</p>
@@ -69,13 +70,13 @@
               <h3 class="features__heading">Заводит новых друзей</h3>
               <p class="features__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
+              <div class="features__picture"></div>
             </li>
           </ul>
-          <div class="features__picture"></div>
         </div>
       </div>
     </section>
-    <section class="about">
+    <!-- <section class="about">
       <div class="about__wrapper">
         <div class="about__watch-image"></div>
         <div class="about__container">
@@ -85,7 +86,7 @@
           <a class="about__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
       <div class="reviews__wrapper slider">
@@ -140,15 +141,15 @@
         <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__container">
           <div class="contacts__item">
-            <b class="contacts__subheading">Звоните:</b>
+            <p class="contacts__subheading">Звоните:</p>
             <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__item">
-            <b class="contacts__subheading">Пишите:</b>
+            <p class="contacts__subheading">Пишите:</p>
             <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__item">
-            <b class="contacts__subheading">Приезжайте в гости:</b>
+            <p class="contacts__subheading">Приезжайте в гости:</p>
             <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
@@ -170,19 +171,27 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">Мы в Twitter</a>
+            <a href="#" class="social__link social__link--twitter">
+              <span class="visually-hidden">Мы в Twitter</span>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">Мы на Facebook</a>
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">Мы на Facebook</span>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">Мы на Youtube</a>
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Мы на Youtube</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
