@@ -1,0 +1,70 @@
+.download {
+  background-color: @blue;
+}
+
+.download__wrapper {
+  .wrapper();
+}
+
+.download__heading {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 296px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  background-image: url("../img/phone.png"), url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 99%, 50% 0%;
+  color: @white;
+}
+
+.download__container {
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.download__button {
+  display: block;
+  margin-bottom: 30px;
+  padding: 13px;
+  border: 3px solid @white;
+  border-radius: 29px;
+  text-align: center;
+  color: @white;
+  font-weight: 700;
+}
+
+.download__list {
+  display: flex;
+  justify-content: space-evenly;
+  .list-reset();
+}
+
+.download__link {
+  display: inline-block;
+  width: 47px;
+  height: 56px;
+
+  &--ios {
+    background: url("../img/apple-logo.svg") no-repeat center;
+  }
+
+  &--android {
+    background: url("../img/android-logo.svg") no-repeat center;
+  }
+
+  &--windows {
+    background: url("../img/microsoft-logo.svg") no-repeat center;
+  }
+}
+
+.download__available-platforms {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: @white;
+}
