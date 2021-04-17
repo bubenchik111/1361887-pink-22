@@ -1,38 +1,6 @@
-@white: #ffffff;
-@black: #000000;
-@black-transparent: rgba(0, 0, 0, 0.3);
-@pink: #d22856;
-@dark-blue: #1d2631;
-@light-grey: #f2f2f2;
-@blue: #283645;
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans Light";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
-}
-
 .page__body {
   margin: 0;
-  font-family: "Open Sans", "Arial", "Tahoma", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: @blue;
 }
 
@@ -55,6 +23,9 @@ a {
   clip: rect(0 0 0 0);
 }
 
+@import "variables.less";
+@import "fonts.less";
+@import "mixins.less";
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/download.less";
