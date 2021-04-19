@@ -5,7 +5,7 @@
   <title>Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
@@ -124,14 +124,14 @@
       <section class="review">
         <div class="review__wrapper">
           <h2 class="review__heading">Опишите свои эмоции</h2>
-          <textarea class="review__text" id="review-text" name="review-text" cols="30" rows="10"
+          <textarea class="review__text" id="review-text" name="review-text" cols="30" rows="5"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
       </section>
       <section class="submit">
         <h2 class="visually-hidden">Отправка формы</h2>
         <div class="submit__wrapper">
-          <button class="submit__button button" type="submit">Кнопка отправки формы</button>
+          <button class="submit__button button" type="submit">Отправить форму</button>
           <span class="submit__hint">* &mdash; обязательные поля</span>
         </div>
       </section>
@@ -159,19 +159,27 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">Мы в Twitter</a>
+            <a href="#" class="social__link social__link--twitter">
+              <span class="visually-hidden">Мы в Twitter</span>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">Мы на Facebook</a>
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">Мы на Facebook</span>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">Мы на Youtube</a>
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Мы на Youtube</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <a class="copyright__link" href="#">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
