@@ -5,7 +5,7 @@
   <title>Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
@@ -39,7 +39,9 @@
     <section class="feed">
       <h2 class="visually-hidden">Лента постов</h2>
       <div class="feed__wrapper">
-        <p class="feed__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        <p class="feed__header">Взгляните на фотографии, которые выкладывают пользователи!
+          <br>
+          Видите, как не хватает ваших?
         </p>
         <div class="feed__post post">
           <a class="post__link" href="#">
@@ -50,10 +52,7 @@
               <span class="post__author">Анна</span>
               <time class="post__date" datetime="2021-04-01T22:44">(5 минут назад)</time>
             </div>
-            <p class="post__text">Прыгать или нет? Напишите в
-              комментарии свой совет и
-              смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!</p>
+            <p class="post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="post__likes likes">
               <button class="likes__like-button likes__like-button--active" type="button"></button>
               <span class="likes__count">Нравится: <span class="likes__value">215</span></span>
@@ -181,8 +180,10 @@
     <section class="upload">
       <h2 class="visually-hidden">Редактор фотографий</h2>
       <div class="upload__wrapper">
-        <p class="upload__header">Затмите их всех!
-          Выкладывайте все, что накопилось в телефоне!</p>
+        <header class="upload__header">
+          <p class="upload__title">Затмите их всех! <br>
+            Выкладывайте все, что накопилось в телефоне!</p>
+        </header>
         <form class="upload__editor editor">
           <div class="editor__photo">
             <img class="editor__photo-preview" src="img/photo-7-tablet.jpg" width="280" height="374" alt="">
@@ -216,9 +217,9 @@
             </div>
           </div>
           <div class="editor__upload upload">
-            <button class="upload__post-button upload__post-button--hover upload__post-button--active"
+            <button class="upload__button upload__post-button upload__post-button--hover upload__post-button--active"
               type="submit">Запостить</button>
-            <button class="upload__cancel-button upload__cancel-button--hover upload__cancel-button--active"
+            <button class="upload__button upload__cancel-button upload__cancel-button--hover upload__cancel-button--active"
               type="reset">Отмена</button>
           </div>
         </form>
@@ -233,19 +234,27 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">Мы в Twitter</a>
+            <a href="#" class="social__link social__link--twitter">
+              <span class="visually-hidden">Мы в Twitter</span>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">Мы на Facebook</a>
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">Мы на Facebook</span>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">Мы на Youtube</a>
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Мы на Youtube</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <a class="copyright__link" href="#">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
